@@ -1,177 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-:root {
-  --bg: #0b0f1a;
-  --surface: #111827;
-  --border: #1f2937;
-  --ink: #e5e7eb;
-  --muted: #9ca3af;
-  --accent: #22d3ee;
-  --accent-2: #818cf8;
-  --warn: #f59e0b;
-}
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: var(--bg);
-  color: var(--ink);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
-
-.wrap { max-width: 1100px; margin: 0 auto; padding: 28px 22px; }
-
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 22px;
-  background: rgba(17, 24, 39, 0.85);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  border-bottom: 1px solid var(--border);
-}
-.logo {
-  font-weight: 800;
-  letter-spacing: -0.3px;
-  color: var(--ink);
-}
-.logo span { color: var(--accent); }
-nav { display: flex; gap: 18px; }
-nav a {
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 500;
-  transition: color .15s;
-}
-nav a:hover { color: var(--accent); }
-
-.hero {
-  padding: 54px 24px 40px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 22px;
-}
-.hero h1 {
-  font-size: 40px;
-  letter-spacing: -0.6px;
-  line-height: 1.2;
-  margin-bottom: 12px;
-}
-.hero p {
-  color: var(--muted);
-  font-size: 16px;
-  max-width: 720px;
-  margin-bottom: 18px;
-}
-.cta {
-  display: inline-flex;
-  gap: 10px;
-}
-.btn {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  border: 1px solid transparent;
-  transition: transform .15s, box-shadow .15s;
-}
-.btn:hover { transform: translateY(-1px); }
-.btn-primary {
-  background: var(--accent);
-  color: #0b0f1a;
-  box-shadow: 0 8px 24px rgba(34,211,238,0.15);
-}
-.btn-secondary {
-  background: transparent;
-  color: var(--ink);
-  border-color: var(--border);
-}
-.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
-
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 18px;
-  transition: .2s;
-}
-.card:hover { border-color: #374151; }
-.card h3 { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--ink); }
-.card p { color: var(--muted); font-size: 13.5px; line-height: 1.55; }
-.card .icon { font-size: 22px; margin-bottom: 10px; }
-
-.section-title {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  color: var(--accent);
-  margin: 0 0 14px;
-  display: flex; align-items: center; gap: 10px;
-}
-.section-title::after {
-  content: "";
-  flex: 1; height: 1px; background: var(--border);
-}
-
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 22px; }
-
-.check { color: var(--accent); }
-.cross { color: #f87171; }
-
-footer {
-  border-top: 1px solid var(--border);
-  margin-top: 30px;
-  padding-top: 18px;
-  color: var(--muted);
-  font-size: 13px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.badge {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: rgba(34,211,238,0.08);
-  color: var(--accent);
-  border: 1px solid rgba(34,211,238,0.2);
-}
-
-blockquote {
-  border-left: 3px solid var(--accent);
-  padding: 10px 14px;
-  color: var(--muted);
-  background: rgba(34,211,238,0.04);
-  border-radius: 0 10px 10px 0;
-  margin: 14px 0;
-  font-style: italic;
-}
-
-@media (max-width: 800px) {
-  .cards { grid-template-columns: 1fr; }
-  .grid-2 { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 28px; }
-  nav { gap: 12px; }
-}
-</style>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QA Excellence Lab — Quality Engineering · Test Strategy · AI-Augmented QA</title>
+<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-
 <header class="site-header">
   <div class="logo">QA Excellence <span>Lab</span></div>
   <nav>
@@ -184,53 +19,51 @@ blockquote {
 
 <main>
   <section class="hero">
-    <h1>Quality Engineering · AI-Augmented QA · Test Strategy</h1>
-    <p>Je conçois des strategies de test et des pipelines de qualite pour des SI complexes, avec une experimentation avancee sur l'IA appliquee a la QA.</p>
-    <div class="cta">
-      <a href="projects.html" class="btn btn-primary">Voir les projets</a>
-      <a href="about.html" class="btn btn-secondary">Mon parcours</a>
+    <div class="wrap">
+      <h1>Quality Engineering · AI-Augmented QA · Test Strategy</h1>
+      <p>Je conçois des stratégies de test et des pipelines de qualité pour des SI complexes, avec une expérimentation avancée sur l'IA appliquée à la QA.</p>
+      <div class="cta">
+        <a href="projects.html" class="btn btn-primary">Voir les projets</a>
+        <a href="about.html" class="btn btn-secondary">Mon parcours</a>
+      </div>
     </div>
   </section>
 
   <section class="wrap">
-    <div class="section-title">Axes strategiques</div>
+    <div class="section-title">Axes stratégiques</div>
     <div class="cards">
       <div class="card">
         <div class="icon">🧭</div>
-        <h3>Strategie &amp; Gouvernance</h3>
-        <p>Plans de test, couverture, reporting et priorisation par risque. Je structure la qualite comme un levier Decisions.</p>
+        <h3>Stratégie &amp; Gouvernance</h3>
+        <p>Plans de test, couverture, reporting et priorisation par risque.</p>
       </div>
       <div class="card">
         <div class="icon">🧪</div>
         <h3>Recette &amp; Automatisation</h3>
-        <p>Fonctionnel, UAT, non-regression, Gherkin et automatisation ciblee. Sans outil magique : approche pragmatique.</p>
+        <p>Fonctionnel, UAT, non-régression, Gherkin et automatisation ciblée. Pragmatique, pas d'outil magique.</p>
       </div>
       <div class="card">
         <div class="icon">🤖</div>
         <h3>IA &amp; Agents</h3>
-        <p>Orchestration multi-agents, generation de tests par LLM, pipelines RAG et analyse de regression assistee.</p>
+        <p>Orchestration multi-agents, génération de tests par LLM, pipelines RAG.</p>
       </div>
     </div>
   </section>
 
   <section class="wrap">
-    <div class="section-title">Etat des travaux</div>
+    <div class="section-title">État des travaux</div>
     <div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px 18px;">
       <p style="color:var(--muted); font-size:14px;">
         <span class="badge">Roadmap</span>
-        <span style="margin-left:8px;">Sitographie a venir : referentiels, outils, conferences, lectures cles.</span>
+        <span style="margin-left:8px;">Sitographie à venir : référentiels, outils, conférences, lectures clés.</span>
       </p>
-      <p style="color:var(--muted); font-size:13px; margin-top:10px;">
-        Livrables prevus : referencement technique, reveilonomique, medias juridiques et micro SaaS cibles.
-      </p>
+      <p style="color:var(--muted); font-size:13px; margin-top:10px;">Livrables prévus : référencement technique, réveilonomique, médias juridiques et micro SaaS cibles.</p>
     </div>
   </section>
 
   <section class="wrap">
     <div class="section-title">Philosophie</div>
-    <blockquote>
-      La qualite n'est pas une etape supplementaire. C'est une discipline d'ingenierie : mesurable, predictible et scalable.
-    </blockquote>
+    <blockquote>La qualité n'est pas une étape supplémentaire. C'est une discipline d'ingénierie : mesurable, prédictible et scalable.</blockquote>
   </section>
 </main>
 
@@ -238,7 +71,6 @@ blockquote {
   <span>© <span id="y"></span> QA Excellence Lab — Thasin Jahangir</span>
   <span>Paris &amp; Remote · thasin@live.com</span>
 </footer>
-
 <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
