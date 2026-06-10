@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets — QA Excellence Lab</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="logo">QA Excellence <span>Lab</span></div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="about.html">A propos</a>
+    <a href="projects.html">Projets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="section-title">Projets selectionnes</div>
+  <div class="projects">
+    <div class="project">
+      <div class="project-title">JobHunt — QA Job Dashboard</div>
+      <div class="project-desc">Scraper multi-sources avec matching CV et generation de lettres de motivation.</div>
+      <div class="project-stack">
+        <span class="chip">Python</span>
+        <span class="chip">Flask</span>
+        <span class="chip">DeepSeek</span>
+        <span class="chip">Render</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Pipelines QA Agentic</div>
+      <div class="project-desc">Orchestration multi-agents: delegation, generation de tests par IA, analyse de regression assistee.</div>
+      <div class="project-stack">
+        <span class="chip">Hermes Agent</span>
+        <span class="chip">MCP</span>
+        <span class="chip">Claude Code</span>
+        <span class="chip">DeepSeek</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Nous AI News</div>
+      <div class="project-desc">Agregation IA temps reel: 86 flux RSS, extraction d'entites, categorisation LLM, RLHF.</div>
+      <div class="project-stack">
+        <span class="chip">TypeScript</span>
+        <span class="chip">Next.js 14</span>
+        <span class="chip">Supabase</span>
+        <span class="chip">OpenAI</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>© <span id="y"></span> QA Excellence Lab — Thasin Jahangir</span>
+  <span>thasin@live.com · LinkedIn</span>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
